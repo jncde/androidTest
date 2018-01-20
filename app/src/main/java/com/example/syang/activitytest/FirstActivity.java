@@ -1,6 +1,7 @@
 package com.example.syang.activitytest;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -27,9 +28,10 @@ public class FirstActivity extends AppCompatActivity {
 
 //                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 //                startActivity(intent);
-                Intent intent = new Intent("com.example.activitytest.ACTION_START");
-                intent.addCategory("com.example.activitytest.MY_CATEGORY");
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://www.google.com"));
                 startActivity(intent);
+
 
             }
         });
