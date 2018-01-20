@@ -28,6 +28,7 @@ public class FirstActivity extends AppCompatActivity {
 //                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
 //                startActivity(intent);
                 Intent intent = new Intent("com.example.activitytest.ACTION_START");
+                intent.addCategory("com.example.activitytest.MY_CATEGORY");
                 startActivity(intent);
 
             }
